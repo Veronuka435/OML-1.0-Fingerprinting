@@ -1,0 +1,22 @@
+dictionary = {
+    "hello": "привіт",
+    "world": "світ",
+    "cat": "кіт",
+    "dog": "пес",
+    "apple": "яблуко",
+    "book": "книга",
+    "house": "будинок",
+    "water": "вода",
+    "sun": "сонце",
+    "moon": "місяць"
+}
+
+def translate(word):
+    return dictionary.get(word.lower(), "нема в словнику")
+
+# Приклад
+while True:
+    word = input("Введіть слово англійською: ")
+    if word == "exit":
+        break
+    print("Переклад:", translate(word))
